@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppReview</string>
+    <string-array name="citiesArray">
+        <item>Fotaleza</item>
+        <item>Caucaia</item>
+        <item>Pacatuba</item>
+        <item>Maracanau</item>
+        <item>Teresina</item>
+    </string-array>
+</resources>
