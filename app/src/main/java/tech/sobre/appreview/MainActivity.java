@@ -1,5 +1,6 @@
 package tech.sobre.appreview;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -42,7 +43,10 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 String name = citiesList.get(position);
 
-                Toast.makeText(getApplicationContext(),name,Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(),name,Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(getApplicationContext(),DetailActivity.class);
+                i.putExtra("name",name);
+                startActivity(i);
             }
         });
 
