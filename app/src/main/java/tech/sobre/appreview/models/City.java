@@ -10,6 +10,9 @@ public class City {
     @SerializedName("main")
     Weather weather;
 
+    @SerializedName("weather")
+    WeatherConditions[] weatherConditions;
+
     public int getId() {
         return id;
     }
@@ -24,5 +27,21 @@ public class City {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Weather getWeather() {
+        return weather;
+    }
+
+    public void setWeather(Weather weather) {
+        this.weather = weather;
+    }
+
+    public WeatherConditions[] getWeatherConditions() {
+        return weatherConditions;
+    }
+
+    public void setWeatherConditions(WeatherConditions[] weatherConditions) {
+        this.weatherConditions = weatherConditions;
     }
 }

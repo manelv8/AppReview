@@ -8,7 +8,7 @@ import tech.sobre.appreview.models.City;
 
 public interface WeatherService {
 
-    @GET("weather")
+    @GET("weather?units=metric")
     Call<City> getCityWeather(@Query("q") String city,
                               @Query("apikey") String api);
 }
