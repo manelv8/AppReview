@@ -20,5 +20,9 @@ public class DetailActivity extends AppCompatActivity {
             cityName = args.getStringExtra("name");
             Log.d("appreview",cityName);
         }
+
+        WeatherTask task = new WeatherTask(cityName);
+        task.execute();
+
     }
 }
